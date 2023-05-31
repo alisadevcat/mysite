@@ -1,0 +1,101 @@
+@use '../settings/colors' as *;
+
+//general styles
+nav ul {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: space-between;
+
+  //desktop
+  @media (min-width: 800px) {
+    justify-content: flex-end;
+  }
+  //tablet
+  @media (min-width: 500px) {
+    justify-content: center;
+    gap: 1.2em; //text scales with the text size
+  }
+}
+
+nav li {
+flex-basis: 48%;
+margin-bottom: 0.5rem;
+
+  @media (min-width: 500px) {
+    flex-basis: auto; //as high as they're
+    margin-bottom: 0;
+  }
+}
+
+nav li:first-child {
+ flex-basis:100%; //logo on itsown line
+ text-align: center;
+
+  @media (min-width: 800px) {
+    flex-basis: auto;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3) {
+  @media (min-width: 800px) {
+    order: 1;
+  }
+}
+nav li:nth-child(4),
+nav li:nth-child(5) {
+  @media (min-width: 800px) {
+    order: 3;
+  }
+}
+
+nav li:first-child a{
+  background-color: transparent;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: $secondary;
+  padding: 0.5rem;
+  background-color: $primary;
+  border-radius: 5px;
+  text-align: center;
+
+  @media (min-width: 800px) {
+    color: $secondary;
+    background-color: transparent;
+    padding: 0;
+  }
+  @media (min-width: 500px) {
+    color: $secondary;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &:hover {
+    color: $primary;
+    background-color: $secondary;
+
+    @media (min-width: 500px) {
+      color: $primary;
+      background-color: transparent;
+    }
+    @media (min-width: 800px) {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+}
+
+.active-site-nav__link {
+  background-color: #4aae9b;
+  color: #ffffff;
+}

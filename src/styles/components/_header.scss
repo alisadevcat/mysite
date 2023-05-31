@@ -1,0 +1,12 @@
+@use '../settings/colors' as *;
+
+.header {
+  background-color: $tertiary-400;
+  color: $secondary;
+  
+  header {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

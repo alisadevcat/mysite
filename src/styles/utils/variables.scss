@@ -1,0 +1,27 @@
+
+// Define all the project colors here.
+$colors: (
+  'inherit': inherit,
+  'transparent': transparent,
+  'current': currentColor,
+  'white': #fff,
+  'black': #000,
+
+  'primary': #D3AC2B,
+  'secondary': #333D51,
+
+  'tertiary-100': #F4F3EA,
+  'tertiary-400': #CBD0D8,
+  'tertiary-500': #968b82,
+
+  'gray-200': #ddd,
+  'gray-400': #4a4f55,
+  'gray-500': #333,
+
+  'error': #c00,
+  'success': #00b300,
+);
+
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
