@@ -1,0 +1,50 @@
+.footer {
+  background-color: antiquewhite;
+
+  footer {
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+
+    @media (min-width: 550px) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    h4 {
+      padding: 0.5rem 0;
+    }
+    .social {
+      @media (min-width: 550px) {
+        flex-basis: 49.5%;
+      }
+
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+
+        @media (min-width: 550px) {
+          display: flex;
+          flex-flow: row wrap;
+        }
+
+        li {
+          margin-right: 1px;
+        }
+      }
+    }
+
+    address {
+      @media (min-width: 550px) {
+        // margin-top: 0;
+        flex-basis: 49.5%;
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+}

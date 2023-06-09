@@ -5,7 +5,7 @@ import Nav from "./Nav.jsx";
 const Header = () => {
   return (
     <div className="header">
-      <header>
+      <header className="container">
         <Nav />
       </header>
     </div>
