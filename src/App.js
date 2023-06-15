@@ -4,13 +4,13 @@ import Footer from './components/global/Footer.jsx';
 
 function App() {
   return (
-    <div className="App">
+       <>
       <Header />
-      <main className="conatiner">
+      <main className="container">
         
       </main>
       <Footer/>
-    </div>
+      </>
   );
 }
 

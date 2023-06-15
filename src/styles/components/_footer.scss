@@ -1,5 +1,7 @@
+@use '../settings/colors' as *;
+
 .footer {
-  background-color: antiquewhite;
+  background-color: $tertiary-400;
 
   footer {
     padding: 3rem;
