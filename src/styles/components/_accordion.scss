@@ -1,0 +1,30 @@
+.accordion {
+  max-width: 600px;
+  padding: 1rem 0;
+
+  .accordion__item {
+    border: 1px solid black;
+    padding: 1rem;
+
+
+    .accordion__item-title {
+      display: block;
+      flex-basis: 95%;
+    }
+
+    .accordion__item-content {
+      display: none;
+    }
+
+    &.accordion-active {
+      .accordion__item-content {
+        display: block;
+      }
+
+      .accordion__item-button span {
+        display: inline-block;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

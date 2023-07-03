@@ -1,0 +1,37 @@
+@use '../settings/breakpoints' as *;
+
+.cards {
+ margin-top: 1rem;
+
+  @include sm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1%;
+  }
+
+  figure {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin: 0 0 0.7rem 0;
+
+    @include sm {
+      flex-basis: 49%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      background-color: aqua;
+      padding: 1rem;
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      opacity: 0.7;
+      //   margin: 0.7rem;
+    }
+  }
+}
